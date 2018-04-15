@@ -47,7 +47,29 @@ cd /etc/tor
 ```
 sudo nano torrc
 ```
-#### 2.) Remove the # before the line that starts with SocksPort 9050
+#### 2.) Remove the # before the line that starts with SocksPort 9050: 
+
+
+Before:
+```
+## Tor opens a SOCKS proxy on port 9050 by default -- even if you don't
+## configure one below. Set "SOCKSPort 0" if you plan to run Tor only
+## as a relay, and not make any local application connections yourself.
+#SOCKSPort 9050 # Default: Bind to localhost:9050 for local connections.
+#SOCKSPort 192.168.0.1:9100 # Bind to this address:port too.
+
+```
+
+After:
+_(should look like this)_
+```
+## Tor opens a SOCKS proxy on port 9050 by default -- even if you don't
+## configure one below. Set "SOCKSPort 0" if you plan to run Tor only
+## as a relay, and not make any local application connections yourself.
+SOCKSPort 9050 # Default: Bind to localhost:9050 for local connections.
+#SOCKSPort 192.168.0.1:9100 # Bind to this address:port too.
+
+```
 
 #### 3.) Save torrc:
 ```
