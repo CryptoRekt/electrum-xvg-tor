@@ -325,20 +325,20 @@ python electrum-xvg
 
 https://www.torproject.org/download/download-easy.html.en#windows
 
-##### Option 2: If you are in a location where access to the Tor Project website is blocked:
+#### Option 2: If you are in a location where access to the Tor Project website is blocked:
 
-###### You can request a copy of the Tor Browser Bundle installer via email. 
+##### You can request a copy of the Tor Browser Bundle installer via email. 
 
-###### To do this, send an email to gettor@torproject.org with the version of Tor you want in the body of the email (e.g., Windows if you have a Windows computer, OSX if you use a Mac Computer, or Linux if you use a Linux-based computer).
+##### To do this, send an email to gettor@torproject.org with the version of Tor you want in the body of the email (e.g., Windows if you have a Windows computer, OSX if you use a Mac Computer, or Linux if you use a Linux-based computer).
 
-###### You will receive a reply to your email with a link to download the installer via several locations online.
+##### You will receive a reply to your email with a link to download the installer via several locations online.
 
 
-##### 2.) Execute the file you downloaded to extract the Tor Browser into a folder on your computer.
+#### 2.) Execute the file you downloaded to extract the Tor Browser into a folder on your computer.
 
-##### 3.) Create a shortcut to Tor browser on your Desktop
+#### 3.) Create a shortcut to Tor browser on your Desktop
 
-##### 4.) Then simply click on “Start Tor Browser.”
+#### 4.) Then simply click on “Start Tor Browser.”
 
 ---------------------------------------------
 ###### _Tor Browser is required to be open and running in the background in order for the electrum tor wallet to connect._
