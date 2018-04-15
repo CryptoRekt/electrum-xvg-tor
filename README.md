@@ -329,18 +329,15 @@ You will receive a reply to your email with a link to download the installer via
 
 ### 3.d) CONFIGURE TOR BIRDGES (OPTIONAL)
 ---------------------------------------------
-```
+
 1.) Click the Configure button to use a bridge or proxy to connect to Tor.
-```
-```
+
 2.) In the next window, Select Yes.
-```
-```
+
 3.) Next, select the default obfs4 bridge.
-```
-```
+
 4.) The next window asks you if you need to use a local proxy to access the Internet. Normally you can connect the Tor network via Tor bridge so just select No.
-```
+
 
 After that, the Tor browser will try to establish a connection to the Tor network.
 
@@ -352,7 +349,7 @@ After that, the Tor browser will try to establish a connection to the Tor networ
 
 
 
-### 4.) HOW OFFICIAL PACKAGES ARE CREATED
+### 4.) How official packages are created.
 ---------------------------------------------
 ```
 python mki18n.py
@@ -361,13 +358,13 @@ pyrcc4 icons.qrc -o gui/qt/icons_rc.py
 
 python setup.py sdist --format=zip,gztar
 ```
-On Mac OS X:
+## On Mac OS X:
 
-### On port based installs
+#### On port based installs
 ```
 sudo python setup-release.py py2app
 ```
-### On brew installs
+#### On brew installs
 ```
 ARCHFLAGS="-arch i386 -arch x86_64" sudo python setup-release.py py2app --includes sip
 
