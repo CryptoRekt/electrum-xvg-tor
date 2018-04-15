@@ -319,10 +319,19 @@ python electrum-xvg
 
 ## 2.b) Installing TOR Browser
 
-
-##### 1.) Download Tor browser here:
+#### 1.)
+##### Options 1: download Tor browser here:
 
 https://www.torproject.org/download/download-easy.html.en#windows
+
+##### Option 2: If you are in a location where access to the Tor Project website is blocked:
+
+###### You can request a copy of the Tor Browser Bundle installer via email. 
+
+###### To do this, send an email to gettor@torproject.org with the version of Tor you want in the body of the email (e.g., Windows if you have a Windows computer, OSX if you use a Mac Computer, or Linux if you use a Linux-based computer).
+
+###### You will receive a reply to your email with a link to download the installer via several locations online.
+
 
 ##### 2.) Execute the file you downloaded to extract the Tor Browser into a folder on your computer.
 
@@ -338,11 +347,100 @@ https://www.torproject.org/download/download-easy.html.en#windows
 
 ## 3.) Installing On OS X
 
-##### install python if you don't already have it.
-https://www.torproject.org/dist/torbrowser/7.5.3/torbrowser-install-7.5.3_en-US.exe
+#### Install The Following Dependencies:
 
+1.)
+###### Python
+https://www.python.org/ftp/python/2.7.14/python-2.7.14-macosx10.6.pkg
+
+###### Modify your system $PATH variable to point to the latest version of python:
+```
+export PATH="/path/to/your/python2.7.14/bin:${PATH}"
+```
+
+2.) _(open a terminal window)_
+###### xcode
+```
+xcode-select --install
+```
+
+###### Homebrew:
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+###### pip
+```
+sudo easy_install pip
+```
+
+###### slowaes
 ```
 pip intall slowaes
+```
+
+###### Tor
+```
+brew install tor
+```
+
+###### Edit the sample Tor configuration file:
+
+```
+cd /usr/local/etc/tor
+```
+
+```
+sudo nano torrc.sample
+```
+
+###### Remove the # before the line that starts with SocksPort 9050: 
+
+Before:
+```
+## Tor opens a SOCKS proxy on port 9050 by default -- even if you don't
+## configure one below. Set "SOCKSPort 0" if you plan to run Tor only
+## as a relay, and not make any local application connections yourself.
+#SOCKSPort 9050 # Default: Bind to localhost:9050 for local connections.
+#SOCKSPort 192.168.0.1:9100 # Bind to this address:port too.
+
+```
+
+After:
+_(should look like this)_
+```
+## Tor opens a SOCKS proxy on port 9050 by default -- even if you don't
+## configure one below. Set "SOCKSPort 0" if you plan to run Tor only
+## as a relay, and not make any local application connections yourself.
+SOCKSPort 9050 # Default: Bind to localhost:9050 for local connections.
+#SOCKSPort 192.168.0.1:9100 # Bind to this address:port too.
+
+```
+
+###### Rename and Save the file:
+
+```
+CTRL+X > Y 
+```
+Rename the file to 'torrc' by deleting .sample
+```
+ENTER > Y
+```
+
+###### Restart tor: 
+
+```
+sudo service tor restart
+```
+
+
+#### 3.) Clone the electrum-xvg-tor Repository to your Documents folder:
+```
+cd ./Documents
+```
+
+```
+git clone https://github.com/vergecurrency/electrum-xvg-tor && cd electrum-xvg-tor
 ```
 
 ```
@@ -350,23 +448,13 @@ python setup.py build
 ```
 
 ```
-Modify electrum-xvg and change python2 to python in the first line
-```
-
-```
 sudo python setup.py install
 ```
 
-```
-then install tor and modify the torrc file, by removing the # from in front of SocksProxy, and change the 9150 to 9050.
-```
+#### Launch the wallet:
 
 ```
-restart tor, then launch wallet by 
-```
-
-```
-py electrum-xvg
+python electrum-xvg
 ```
 
 
