@@ -325,7 +325,7 @@ You will receive a reply to your email with a link to download the installer via
 
 
 ---------------------------------------------
-## 3.d) Configure TOR Bridges _(OPTIONAL)_
+## 3.d) Configure TOR Bridges (OPTIONAL)
 ---------------------------------------------
 
 1.) Click the Configure button to use a bridge or proxy to connect to Tor.
@@ -348,7 +348,7 @@ After that, the Tor browser will try to establish a connection to the Tor networ
 
 
 ## 4.) How Official Packages Are Created.
----------------------------------------------
+
 ```
 python mki18n.py
 
