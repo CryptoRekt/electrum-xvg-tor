@@ -134,7 +134,7 @@ sudo pip install shadowsocks
 
 sudo nano /etc/shadowsocks.json
 
-## Put the following text into the file.
+## Put the following text into the file:
 
 	{
 	"server":"your_server_ip",
@@ -158,7 +158,7 @@ sudo nano /etc/shadowsocks.json
 
 CTRL+X > Y > ENTER
 
-## Start shadowsocks server.
+## Start shadowsocks server:
 
 sudo ssserver -c /etc/shadowsocks.json -d start
 
@@ -193,7 +193,7 @@ sudo nano /etc/rc.local
 2.) GETTING STARTED WITH WINDOWS
 ---------------------------------------------
 
-#download this repo as a zip and extract it to where you would like it to run from. 
+#download this repo as a zip and extract it to where you would like it to run from: 
 https://github.com/vergecurrency/electrum-xvg/archive/master.zip
 
 #download python 2.7 for windows here: 
