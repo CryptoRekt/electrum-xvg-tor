@@ -234,27 +234,29 @@ py electrum-xvg
 2.b) INSTALLING TOR BROWSER
 ---------------------------------------------
 
-#download Tor browser here:
+##### download Tor browser here:
+```
 https://www.torproject.org/download/download-easy.html.en#windows
+```
+##### Execute the file you downloaded to extract the Tor Browser into a folder on your computer.
 
-#Execute the file you downloaded to extract the Tor Browser into a folder on your computer.
+##### Create a shotcut to Tor browser on your Desktop
 
-#Create a shotcut to Tor browser on your Desktop
-
-#Then simply click on “Start Tor Browser.”
+##### Then simply click on “Start Tor Browser.”
 
 ---------------------------------------------
-*Tor Browser is required to be open and running in the background in order for the electrum tor wallet to connect.*
+###### _Tor Browser is required to be open and running in the background in order for the electrum tor wallet to connect._
 ---------------------------------------------
 
 
 
-3.) INSTALLING WITH MAC OSX
----------------------------------------------
+## 3.) Installing On OS X
 
-install python if you dont already have it.
-
+##### install python if you dont already have it.
+```
 https://www.torproject.org/dist/torbrowser/7.5.3/torbrowser-install-7.5.3_en-US.exe
+```
+
 ```
 pip intall slowaes
 
@@ -273,36 +275,37 @@ py electrum-xvg
 
 
 
-3.b) INSTALLING TOR BROWSER
----------------------------------------------
+## 3.b) INSTALLING TOR BROWSER
 
 1.)
 
-#Options 1: download Tor browser here:
+##### Options 1: download Tor browser here:
+```
 https://www.torproject.org/dist/torbrowser/7.5.3/TorBrowser-7.5.3-osx64_en-US.dmg
+```
+##### Option 2: If you are in a location where access to the Tor Project website is blocked:
 
-#Option 2: If you are in a location where access to the Tor Project website is blocked:
+	you can request a copy of the Tor Browser Bundle installer via email. 
 
-you can request a copy of the Tor Browser Bundle installer via email. 
+	To do this, send an email to gettor@torproject.org with the version of Tor you want in the body of the email (e.g., Windows if you have a Windows computer, OSX if you use an Mac Computer, or Linux if you use a Linux-based computer).
 
-To do this, send an email to gettor@torproject.org with the version of Tor you want in the body of the email (e.g., Windows if you have a Windows computer, OSX if you use an Mac Computer, or Linux if you use a Linux-based computer).
-
-You will receive a reply to your email with a link to download the installer via several locations online.
+	You will receive a reply to your email with a link to download the installer via several locations online.
 
 
-2.) Navigate to the folder in which you saved the Tor Browser package (a .dmg file beginning with 'Tor Browser'). In this example, we assume you saved file in your Downloads file.
+##### 2.) Navigate to the folder in which you saved the Tor Browser package (a .dmg file beginning with 'Tor Browser'). In this example, we assume you saved file in your Downloads file.
 
-3.) Double-click the Tor Browser .dmg file to mount it as a disk image. It should show up as in a new window and under Devices in the left-hand sidebar of a normal Finder window.
+##### 3.) Double-click the Tor Browser .dmg file to mount it as a disk image. It should show up as in a new window and under Devices in the left-hand sidebar of a normal Finder window.
 
-4.) Drag the TorBrowser.app into your Applications folder.
+##### 4.) Drag the TorBrowser.app into your Applications folder.
 
-5.) Before we start using TorBrowser, we should unmount (or 'eject') the TorBrowser disk image. Find Tor Browser under Devices in the Finder sidebar. Click on the {eject} icon next to it in the sidebar to unmount the disk image.
+##### 5.) Before we start using TorBrowser, we should unmount (or 'eject') the TorBrowser disk image. Find Tor Browser under Devices in the Finder sidebar. Click on the {eject} icon next to it in the sidebar to unmount the disk image.
 
 
 
 ---------------------------------------------
+
 ## 3.c) How To Configure TOR Browser.
----------------------------------------------
+
 
 ##### 1.)  Navigate to the Tor Browser in your Applications folder and open the application.
 
@@ -326,15 +329,15 @@ You will receive a reply to your email with a link to download the installer via
 
 ---------------------------------------------
 ## 3.d) Configure TOR Bridges (OPTIONAL)
----------------------------------------------
 
-1.) Click the Configure button to use a bridge or proxy to connect to Tor.
 
-2.) In the next window, Select Yes.
+##### 1.) Click the Configure button to use a bridge or proxy to connect to Tor.
 
-3.) Next, select the default obfs4 bridge.
+##### 2.) In the next window, Select Yes.
 
-4.) The next window asks you if you need to use a local proxy to access the Internet. Normally you can connect the Tor network via Tor bridge so just select No.
+##### 3.) Next, select the default obfs4 bridge.
+
+##### 4.) The next window asks you if you need to use a local proxy to access the Internet. Normally you can connect the Tor network via Tor bridge so just select No.
 
 
 After that, the Tor browser will try to establish a connection to the Tor network.
