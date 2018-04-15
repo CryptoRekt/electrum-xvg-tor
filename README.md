@@ -1,179 +1,216 @@
-Electrum-XVG for TOR - 
-------------------------------------------------
-lightweight VERGE client for connecting 
-------------------------------------------------
-to the XVG Tor Electrum Server
-------------------------------------------------
+## Electrum-XVG for TOR - 
+
+##### _lightweight VERGE client for connecting to the XVG Tor Electrum Server_
+
 ![Electrum-XVG](https://raw.githubusercontent.com/vergecurrency/electrum-xvg-tor/master/electrumlogo.png)
 
 [![Build Status](https://travis-ci.org/vergecurrency/electrum-xvg-tor.svg?branch=master)](https://travis-ci.org/vergecurrency/electrum-xvg-tor)
 
 Licence: GNU GPL v3
 
-Authors: Sunerok, Bitspill, Whit3water & CryptoRekt
+_Authors: Sunerok, Bitspill, Whit3water & CryptoRekt_
 
-Language: Python
+## Language: 
+_Python_
 
-Homepage: http://VERGEcurrency.com/
+## Homepage: 
+https://Vergecurrency.com/
 
-Download TOR: https://www.torproject.org/download/download
+## Download TOR: 
+https://www.torproject.org/download/download
 
-For binary windows release, just run Tor, and then run the electrum .exe
+## For binary windows release, just run Tor, and then run the electrum .exe
 
 ![electrum-windows](http://i.imgur.com/E4zj9JL.png)
 
 
 
 
-1.a) GETTING STARTED WITH UBUNTU/LINUX
----------------------------------------------
+## 1.a) Getting Started With Ubuntu/Linux:
+```
 sudo apt-get update
+```
 
+```
 sudo apt-get install tor
+```
 
+```
 sudo service tor start && sudo service tor stop
+```
 
-now go to /etc/tor/ and edit the torrc file. (you can use sudo nano torrc)
+#### now go to /etc/tor/ and edit the torrc file. (you can use sudo nano torrc)
 
-you just need to remove the # before the line that starts with SocksPort 9050
+#### you just need to remove the # before the line that starts with SocksPort 9050
 
-then save torrc, and go back to command prompt and type sudo service tor restart.
+#### then save torrc, and go back to command prompt and type sudo service tor restart.
 
-now we install the electrum wallet!
+## Now we install the electrum wallet:
 
+```
 sudo apt-get install git pyqt4-dev-tools python-pip python-dev python-slowaes python-pip
+```
 
+```
 sudo pip install pyasn1 pyasn1-modules pbkdf2 tlslite qrcode
+```
 
+```
 git clone https://github.com/vergecurrency/electrum-xvg-tor && cd electrum-xvg-tor
+```
 
+```
 pyrcc4 icons.qrc -o gui/qt/icons_rc.py
+```
 
+```
 sudo python setup.py install
+```
 
+```
 chmod +x ./electrum-xvg
+```
 
+## To run Electrum from this directory, just do:
 
-To run Electrum from this directory, just do:
----------------------------------------------
-  ./electrum-xvg
+```
+./electrum-xvg
+```
 
+## To start Electrum from your web browser, see:
 
-To start Electrum from your web browser, see
---------------------------------------------
 http://electrum-verge.xyz/Verge_URIs.html
 
 
-To update your copy of the electrum client:
--------------------------------------------
+## To update your copy of the electrum client:
+
+```
 cd electrum-xvg
-
+```
+```
 git pull
-
+```
+```
 sudo python setup.py install
+```
 
 
 
+## 1.b) Installing TOR Browser
 
-1.b) INSTALLING TOR BROWSER
+
+#### 1.) Download the latest Tor browser from the official distribution website:
+
+https://www.torproject.org/projects/torbrowser.html.en
+
+#### 2.) Download the architecture-appropriate file above, save it somewhere, then run one of the following two commands to extract the package archive:
+
+```
+tar -xvJf tor-browser-linux32-7.5.3_LANG.tar.xz
+```
+###### or (for the 64-bit version):
+
+```
+tar -xvJf tor-browser-linux64-7.5.3_LANG.tar.xz
+```
+###### _(where LANG is the language listed in the filename)._
+
+#### 3.) Once that's done, switch to the Tor browser directory by running:
+
+```	
+cd tor-browser_LANG
+```
+#### 4.) To run Tor Browser, click either on the Tor Browser or the Tor Browser Setup icon or execute the start-tor-browser.desktop file in a terminal:
+
+```
+./start-tor-browser.desktop
+```
+
+###### Note: Before you can use Tor browser you need to configure the Tor network settings. If you currently reside in a country that does not have connection limitations on Tor, Simply press connect and Tor browser will automatically configure itself.
+
+---------------------------------------------
+###### _Tor Browser is required to be open and running in the background in order for the electrum tor wallet to connect._
 ---------------------------------------------
 
-1.) Download the latest Tor browser from the official distribution website:
-	https://www.torproject.org/projects/torbrowser.html.en
-
-2.) Download the architecture-appropriate file above, save it somewhere, then run one of the following two commands to extract the package archive:
-
-	tar -xvJf tor-browser-linux32-7.5.3_LANG.tar.xz
-
-or (for the 64-bit version):
-
-	tar -xvJf tor-browser-linux64-7.5.3_LANG.tar.xz
-
-(where LANG is the language listed in the filename).
-
-3.) Once that's done, switch to the Tor browser directory by running:
-	
-	cd tor-browser_LANG
-
-4.) To run Tor Browser, click either on the Tor Browser or the Tor Browser Setup icon or execute the start-tor-browser.desktop file in a terminal:
-
-	./start-tor-browser.desktop
 
 
-Note: Before you can use Tor browser you need to configure the Tor network settings. If you currently reside in a country that does not have connection limitations on Tor, Simply press connect and Tor browser will automatically configure itself.
-
----------------------------------------------
-*Tor Browser is required to be open and running in the background in order for the electrum tor wallet to connect.*
----------------------------------------------
+## 1.c) TOR Browser Setup Instructions For Countries With Restrictions: 
 
 
+## If Tor is blocked in your country like China:
 
-1.c) TOR BROWSER SETUP INSTRUCTIONS FOR COUNTRIES WITH RESTRICTIONS 
----------------------------------------------
+#### 1.) Click the Configure button to use a bridge or proxy to connect to Tor.
 
-If Tor is blocked in your country like China:
+#### 2.) In the next window, Select Yes.
 
-1.) Click the Configure button to use a bridge or proxy to connect to Tor.
+#### 3.) Next, select the default obfs4 bridge.
 
-2.) In the next window, Select Yes.
-
-3.) Next, select the default obfs4 bridge.
-
-4.) The next window asks you if you need to use a local proxy to access the Internet. Normally you can connect the Tor network via Tor bridge so just select No.
+#### 4.) The next window asks you if you need to use a local proxy to access the Internet. Normally you can connect the Tor network via Tor bridge so just select No.
 
 After that, the Tor browser will try to establish a connection to the Tor network.
 
-If the connection failed, then go back to the previous step and configure a proxy to access the Internet. See 1.d below
+###### _If the connection failed, then go back to the previous step and configure a proxy to access the Internet. See 1.d below_
 
 
 
-1.d)SETUP INSTRUCTIONS FOR SHADOWSOCKS
----------------------------------------------
-## Debian/Ubuntu
+## 1.d) Setup Instructions for ShadowSocks
 
+#### Debian/Ubuntu
+```
 sudo apt-get update
+```
+```
 sudo apt-get install python-pip 
+```
+```
 sudo apt-get install python-setuptools m2crypto
+```
+```
 sudo pip install shadowsocks
-
-## CentOS/RHEL
-
+```
+#### CentOS/RHEL
+```
 sudo yum install m2crypto python-setuptools
+```
+```
 sudo easy_install pip
+```
+```
 sudo pip install shadowsocks
-
-## Create a configuration file:
-
+```
+#### Create a configuration file:
+```
 sudo nano /etc/shadowsocks.json
+```
+#### Put the following text into the file:
+```
+{
+"server":"your_server_ip",
+"server_port":8000,
+"local_port":1080,
+"password":"your_passwd",
+"timeout":600,
+"method":"aes-256-cfb"
+}
+```
+#### Explanation of each field:
+```
+server:  your hostname or server IP (IPv4/IPv6).
+server_port:  server port number.
+local_port:  local port number.
+password:  a password used to encrypt transfer.
+timeout:  connections timeout in seconds.
+method:  encryption method, “bf-cfb”, “aes-256-cfb”, “des-cfb”, “rc4”, etc. Default is table, which is not secure. “aes-256-cfb” is recommended.
+```
 
-## Put the following text into the file:
-
-	{
-	"server":"your_server_ip",
-	"server_port":8000,
-	"local_port":1080,
-	"password":"your_passwd",
-	"timeout":600,
-	"method":"aes-256-cfb"
-	}
-
-## Explanation of each field:
-
-    server:  your hostname or server IP (IPv4/IPv6).
-    server_port:  server port number.
-    local_port:  local port number.
-    password:  a password used to encrypt transfer.
-    timeout:  connections timeout in seconds.
-    method:  encryption method, “bf-cfb”, “aes-256-cfb”, “des-cfb”, “rc4”, etc. Default is table, which is not secure. “aes-256-cfb” is recommended.
-
-## To save:
+#### To save:
 
 CTRL+X > Y > ENTER
 
-## Start shadowsocks server:
-
+#### Start shadowsocks server:
+```
 sudo ssserver -c /etc/shadowsocks.json -d start
-
+```
 #### To stop shadowsocks server:
 ```
 sudo ssserver -d stop
