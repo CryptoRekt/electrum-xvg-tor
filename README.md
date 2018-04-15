@@ -91,7 +91,7 @@ Once the installation has completed, Launch the tor browser from the dash.
 Before you can use Tor browser you need to configure the Tor network settings. If you currently reside in a country that does not have connection limitations on Tor, Simply press connect and Tor browser will automatically configure itself.
 
 ---------------------------------------------
-**Tor Browser is required to be open and running in the background in order for the electrum tor wallet to connect.**
+*Tor Browser is required to be open and running in the background in order for the electrum tor wallet to connect.*
 ---------------------------------------------
 
 
@@ -184,7 +184,7 @@ sudo nano /etc/rc.local
 /usr/bin/python /usr/bin/sslocal -c /etc/shadowsocks.json
 
 ---------------------------------------------
-**Tor Browser is required to be open and running in the background in order for the electrum tor wallet to connect.**
+*Tor Browser is required to be open and running in the background in order for the electrum tor wallet to connect.*
 ---------------------------------------------
 
 
@@ -232,7 +232,7 @@ https://www.torproject.org/download/download-easy.html.en#windows
 #Then simply click on “Start Tor Browser.”
 
 ---------------------------------------------
-**Tor Browser is required to be open and running in the background in order for the electrum tor wallet to connect.**
+*Tor Browser is required to be open and running in the background in order for the electrum tor wallet to connect.*
 ---------------------------------------------
 
 
