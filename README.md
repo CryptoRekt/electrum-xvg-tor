@@ -174,15 +174,15 @@ cd tor-browser_LANG
 ## 1.c) TOR Browser Setup Instructions For Countries With Restrictions: 
 
 
-## If Tor is blocked in your country:
+#### If Tor is blocked in your country:
 
-###### 1.) Click the Configure button to use a bridge or proxy to connect to Tor.
+##### 1.) Click the Configure button to use a bridge or proxy to connect to Tor.
 
-###### 2.) In the next window, Select Yes.
+##### 2.) In the next window, Select Yes.
 
-###### 3.) Next, select the default obfs4 bridge.
+##### 3.) Next, select the default obfs4 bridge.
 
-###### 4.) The next window asks you if you need to use a local proxy to access the Internet. Normally you can connect the Tor network via Tor bridge so just select No.
+##### 4.) The next window asks you if you need to use a local proxy to access the Internet. Normally you can connect the Tor network via Tor bridge so just select No.
 
 After that, the Tor browser will try to establish a connection to the Tor network.
 
