@@ -78,17 +78,29 @@ sudo python setup.py install
 1.b) INSTALLING TOR BROWSER
 ---------------------------------------------
 
-sudo add-apt-repository ppa:webupd8team/tor-browser
+1.) Download the latest Tor browser from the official distribution website:
+	https://www.torproject.org/projects/torbrowser.html.en
 
-sudo apt-get update
+2.) Download the architecture-appropriate file above, save it somewhere, then run one of the following two commands to extract the package archive:
 
-sudo apt-get install tor-browser
+	tar -xvJf tor-browser-linux32-7.5.3_LANG.tar.xz
 
----------------------------------------------
+or (for the 64-bit version):
 
-Once the installation has completed, Launch the tor browser from the dash. 
+	tar -xvJf tor-browser-linux64-7.5.3_LANG.tar.xz
 
-Before you can use Tor browser you need to configure the Tor network settings. If you currently reside in a country that does not have connection limitations on Tor, Simply press connect and Tor browser will automatically configure itself.
+(where LANG is the language listed in the filename).
+
+3.) Once that's done, switch to the Tor browser directory by running:
+	
+	cd tor-browser_LANG
+
+4.) To run Tor Browser, click either on the Tor Browser or the Tor Browser Setup icon or execute the start-tor-browser.desktop file in a terminal:
+
+	./start-tor-browser.desktop
+
+
+Note: Before you can use Tor browser you need to configure the Tor network settings. If you currently reside in a country that does not have connection limitations on Tor, Simply press connect and Tor browser will automatically configure itself.
 
 ---------------------------------------------
 *Tor Browser is required to be open and running in the background in order for the electrum tor wallet to connect.*
