@@ -155,6 +155,7 @@ sudo nano /etc/shadowsocks.json
     method:  encryption method, “bf-cfb”, “aes-256-cfb”, “des-cfb”, “rc4”, etc. Default is table, which is not secure. “aes-256-cfb” is recommended.
 
 #To save:
+
 CTRL+X > Y > ENTER
 
 #Start shadowsocks server.
