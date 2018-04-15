@@ -255,7 +255,7 @@ https://www.torproject.org/download/download-easy.html.en#windows
 install python if you dont already have it.
 
 https://www.torproject.org/dist/torbrowser/7.5.3/torbrowser-install-7.5.3_en-US.exe
-
+```
 pip intall slowaes
 
 python setup.py build
@@ -269,7 +269,7 @@ then install tor and modify the torrc file, by removing the # from in front of S
 restart tor, then launch wallet by 
 
 py electrum-xvg
-
+```
 
 
 
@@ -327,47 +327,50 @@ You will receive a reply to your email with a link to download the installer via
 
 
 
-3.d) CONFIGURE TOR BIRDGES (OPTIONAL)
+### 3.d) CONFIGURE TOR BIRDGES (OPTIONAL)
 ---------------------------------------------
-
+```
 1.) Click the Configure button to use a bridge or proxy to connect to Tor.
-
+```
+```
 2.) In the next window, Select Yes.
-
+```
+```
 3.) Next, select the default obfs4 bridge.
-
+```
+```
 4.) The next window asks you if you need to use a local proxy to access the Internet. Normally you can connect the Tor network via Tor bridge so just select No.
-
+```
 
 After that, the Tor browser will try to establish a connection to the Tor network.
 
 
 ---------------------------------------------
-**Tor Browser is required to be open and running in the background in order for the electrum tor wallet to connect.**
+###### Tor Browser is required to be open and running in the background in order for the electrum tor wallet to connect.
 ---------------------------------------------
 
 
 
 
-4.) HOW OFFICIAL PACKAGES ARE CREATED
+### 4.) HOW OFFICIAL PACKAGES ARE CREATED
 ---------------------------------------------
-
+```
 python mki18n.py
 
 pyrcc4 icons.qrc -o gui/qt/icons_rc.py
 
 python setup.py sdist --format=zip,gztar
-
+```
 On Mac OS X:
 
-  # On port based installs
-  
-  sudo python setup-release.py py2app
+### On port based installs
+```
+sudo python setup-release.py py2app
+```
+### On brew installs
+```
+ARCHFLAGS="-arch i386 -arch x86_64" sudo python setup-release.py py2app --includes sip
 
-  # On brew installs
-  
-  ARCHFLAGS="-arch i386 -arch x86_64" sudo python setup-release.py py2app --includes sip
-
-  sudo hdiutil create -fs HFS+ -volname "Electrum-XVG" -srcfolder dist/Electrum-XVG.app dist/electrum-xvg-VERSION-macosx.dmg
-
+sudo hdiutil create -fs HFS+ -volname "Electrum-XVG" -srcfolder dist/Electrum-XVG.app dist/electrum-xvg-VERSION-macosx.dmg
+```
 
