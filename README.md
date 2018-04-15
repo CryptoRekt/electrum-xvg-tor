@@ -470,20 +470,20 @@ https://www.torproject.org/dist/torbrowser/7.5.3/TorBrowser-7.5.3-osx64_en-US.dm
 
 #### Option 2: If you are in a location where access to the Tor Project website is blocked:
 
-##### You can request a copy of the Tor Browser Bundle installer via email. 
+###### You can request a copy of the Tor Browser Bundle installer via email. 
 
-##### To do this, send an email to gettor@torproject.org with the version of Tor you want in the body of the email (e.g., Windows if you have a Windows computer, OSX if you use a Mac Computer, or Linux if you use a Linux-based computer).
+###### To do this, send an email to gettor@torproject.org with the version of Tor you want in the body of the email (e.g., Windows if you have a Windows computer, OSX if you use a Mac Computer, or Linux if you use a Linux-based computer).
 
-##### You will receive a reply to your email with a link to download the installer via several locations online.
+###### You will receive a reply to your email with a link to download the installer via several locations online.
 
 
-#### 2.) Navigate to the folder in which you saved the Tor Browser package (a .dmg file beginning with 'Tor Browser'). In this example, we assume you saved file in your Downloads file.
+##### 2.) Navigate to the folder in which you saved the Tor Browser package (a .dmg file beginning with 'Tor Browser'). In this example, we assume you saved file in your Downloads file.
 
-#### 3.) Double-click the Tor Browser .dmg file to mount it as a disk image. It should show up as in a new window and under Devices in the left-hand sidebar of a normal Finder window.
+##### 3.) Double-click the Tor Browser .dmg file to mount it as a disk image. It should show up as in a new window and under Devices in the left-hand sidebar of a normal Finder window.
 
-#### 4.) Drag the TorBrowser.app into your Applications folder.
+##### 4.) Drag the TorBrowser.app into your Applications folder.
 
-#### 5.) Before we start using TorBrowser, we should unmount (or 'eject') the TorBrowser disk image. Find Tor Browser under Devices in the Finder sidebar. Click on the {eject} icon next to it in the sidebar to unmount the disk image.
+##### 5.) Before we start using TorBrowser, we should unmount (or 'eject') the TorBrowser disk image. Find Tor Browser under Devices in the Finder sidebar. Click on the {eject} icon next to it in the sidebar to unmount the disk image.
 
 
 
@@ -495,19 +495,19 @@ https://www.torproject.org/dist/torbrowser/7.5.3/TorBrowser-7.5.3-osx64_en-US.dm
 
 ##### 2.)  Depending on your security settings in System Preferences, you may now see a notification telling you that Tor Browser is from an ’unidentified developer’.
 
-##### 2.1) Open System Preferences by clicking on the Apple icon in the top-level menu and scrolling down to select System Preferences.
+###### 2.1) Open System Preferences by clicking on the Apple icon in the top-level menu and scrolling down to select System Preferences.
 
-##### 2.2) Click on Security & Privacy in the top row of System Preferences.
+###### 2.2) Click on Security & Privacy in the top row of System Preferences.
 
-##### 2.3) In the Security & Privacy section of System Preferences, you should see your Gatekeeper settings in the bottom half of the window. 
+###### 2.3) In the Security & Privacy section of System Preferences, you should see your Gatekeeper settings in the bottom half of the window. 
 
-##### 2.4) You will see "TorBrowser.app" was blocked from opening because it is not from an identified developer. 
+###### 2.4) You will see "TorBrowser.app" was blocked from opening because it is not from an identified developer. 
 
-##### 2.5) Select "Open Anyway"
+###### 2.5) Select "Open Anyway"
 
 ##### 3.) Upon opening Tor browser you will be prompted to either 'connect' or 'configure'
 
-##### 3.1) To connect directly to the Tor network, click [Connect].
+###### 3.1) To connect directly to the Tor network, click [Connect].
 
 
 
