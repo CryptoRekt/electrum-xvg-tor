@@ -174,70 +174,76 @@ CTRL+X > Y > ENTER
 
 sudo ssserver -c /etc/shadowsocks.json -d start
 
-## To stop shadowsocks server:
-
+#### To stop shadowsocks server:
+```
 sudo ssserver -d stop
-
-## Restart Shadowsocks server:
-
+```
+#### Restart Shadowsocks server:
+```
 sudo ssserver -c /etc/shadowsocks.json -d restart
-
-## Check Shadowsocks log
-
+```
+#### Check Shadowsocks log
+```
 less /var/log/shadowsocks.log
-
-## Automatically start shadowsocks service
-
+```
+#### Automatically start shadowsocks service
+```
 sudo nano /etc/rc.local
+```
+#### Add the following lines above exit 0 line in rc.local:
 
-## Add the following lines above exit 0 line in rc.local:
-
-## Automatically start shadowsocks client
+#### Automatically start shadowsocks client
 /usr/bin/python /usr/bin/sslocal -c /etc/shadowsocks.json
 
+
 ---------------------------------------------
-*Tor Browser is required to be open and running in the background in order for the electrum tor wallet to connect.*
----------------------------------------------
-
-
-
-
-2.) GETTING STARTED WITH WINDOWS
+###### _Tor Browser is required to be open and running in the background in order for the electrum tor wallet to connect._
 ---------------------------------------------
 
-#download this repo as a zip and extract it to where you would like it to run from: 
+
+
+
+## 2.) Getting Started With Windows
+
+
+##### download this repo as a zip and extract it to where you would like it to run from: 
 https://github.com/vergecurrency/electrum-xvg/archive/master.zip
 
-#download python 2.7 for windows here: 
+##### download and install python 2.7 for windows here: 
 https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi
 
-#download Microsoft Visual C++ Compiler for Python 2.7 here: 
+##### download and install Microsoft Visual C++ Compiler for Python 2.7 here: 
 https://www.microsoft.com/en-us/download/details.aspx?id=44266
 
-#download python qt4: 
+##### download and install python qt4: 
 http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.3/PyQt4-4.11.3-gpl-Py2.7-Qt4.8.6-x64.exe
 
-#then in MS Visual Studio command prompt (32 or 64 bit), cd into the directory electrum-xvg-tor-master then:
+##### then in MS Visual Studio command prompt (32 or 64 bit), cd into the directory electrum-xvg-tor-master then:
 
+```
 pyrcc4 icons.qrc -o gui/qt/icons_rc.py
-
+```
+```
 python -m pip install --upgrade pip
-
+```
+```
 python -m pip install pyasn1 pyasn1-modules pbkdf2 tlslite qrcode ecdsa ltc_scrypt
-
+```
+```
 py setup.py install
-
+```
+```
 py electrum-xvg
+```
 
 
+## 2.b) Installing TOR Browser
 
-2.b) INSTALLING TOR BROWSER
----------------------------------------------
 
 ##### download Tor browser here:
-```
+
 https://www.torproject.org/download/download-easy.html.en#windows
-```
+
 ##### Execute the file you downloaded to extract the Tor Browser into a folder on your computer.
 
 ##### Create a shotcut to Tor browser on your Desktop
@@ -253,43 +259,47 @@ https://www.torproject.org/download/download-easy.html.en#windows
 ## 3.) Installing On OS X
 
 ##### install python if you dont already have it.
-```
 https://www.torproject.org/dist/torbrowser/7.5.3/torbrowser-install-7.5.3_en-US.exe
-```
 
 ```
 pip intall slowaes
-
+```
+```
 python setup.py build
-
+```
+```
 Modify electrum-xvg and change python2 to python in the first line
-
+```
+```
 sudo python setup.py install
-
+```
+```
 then install tor and modify the torrc file, by removing the # from in front of SocksProxy, and change the 9150 to 9050.
-
+```
+```
 restart tor, then launch wallet by 
-
+```
+```
 py electrum-xvg
 ```
 
 
 
-## 3.b) INSTALLING TOR BROWSER
+## 3.b) Installing TOR Browser
 
 1.)
 
 ##### Options 1: download Tor browser here:
-```
+
 https://www.torproject.org/dist/torbrowser/7.5.3/TorBrowser-7.5.3-osx64_en-US.dmg
-```
+
 ##### Option 2: If you are in a location where access to the Tor Project website is blocked:
 
-	you can request a copy of the Tor Browser Bundle installer via email. 
+###### you can request a copy of the Tor Browser Bundle installer via email. 
 
-	To do this, send an email to gettor@torproject.org with the version of Tor you want in the body of the email (e.g., Windows if you have a Windows computer, OSX if you use an Mac Computer, or Linux if you use a Linux-based computer).
+###### To do this, send an email to gettor@torproject.org with the version of Tor you want in the body of the email (e.g., Windows if you have a Windows computer, OSX if you use an Mac Computer, or Linux if you use a Linux-based computer).
 
-	You will receive a reply to your email with a link to download the installer via several locations online.
+###### You will receive a reply to your email with a link to download the installer via several locations online.
 
 
 ##### 2.) Navigate to the folder in which you saved the Tor Browser package (a .dmg file beginning with 'Tor Browser'). In this example, we assume you saved file in your Downloads file.
@@ -302,7 +312,6 @@ https://www.torproject.org/dist/torbrowser/7.5.3/TorBrowser-7.5.3-osx64_en-US.dm
 
 
 
----------------------------------------------
 
 ## 3.c) How To Configure TOR Browser.
 
@@ -327,7 +336,7 @@ https://www.torproject.org/dist/torbrowser/7.5.3/TorBrowser-7.5.3-osx64_en-US.dm
 
 
 
----------------------------------------------
+
 ## 3.d) Configure TOR Bridges (OPTIONAL)
 
 
