@@ -136,14 +136,14 @@ sudo nano /etc/shadowsocks.json
 
 #Put the following text into the file.
 
-{
+	{
 	"server":"your_server_ip",
 	"server_port":8000,
 	"local_port":1080,
 	"password":"your_passwd",
 	"timeout":600,
 	"method":"aes-256-cfb"
-}
+	}
 
 #Explanation of each field:
 
