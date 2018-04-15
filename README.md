@@ -117,24 +117,24 @@ If the connection failed, then go back to the previous step and configure a prox
 
 1.d)SETUP INSTRUCTIONS FOR SHADOWSOCKS
 ---------------------------------------------
-##Debian/Ubuntu
+## Debian/Ubuntu
 
 sudo apt-get update
 sudo apt-get install python-pip 
 sudo apt-get install python-setuptools m2crypto
 sudo pip install shadowsocks
 
-##CentOS/RHEL
+## CentOS/RHEL
 
 sudo yum install m2crypto python-setuptools
 sudo easy_install pip
 sudo pip install shadowsocks
 
-##Create a configuration file:
+## Create a configuration file:
 
 sudo nano /etc/shadowsocks.json
 
-##Put the following text into the file.
+## Put the following text into the file.
 
 	{
 	"server":"your_server_ip",
@@ -145,7 +145,7 @@ sudo nano /etc/shadowsocks.json
 	"method":"aes-256-cfb"
 	}
 
-##Explanation of each field:
+## Explanation of each field:
 
     server:  your hostname or server IP (IPv4/IPv6).
     server_port:  server port number.
@@ -154,31 +154,31 @@ sudo nano /etc/shadowsocks.json
     timeout:  connections timeout in seconds.
     method:  encryption method, “bf-cfb”, “aes-256-cfb”, “des-cfb”, “rc4”, etc. Default is table, which is not secure. “aes-256-cfb” is recommended.
 
-##To save:
+## To save:
 
 CTRL+X > Y > ENTER
 
-##Start shadowsocks server.
+## Start shadowsocks server.
 
 sudo ssserver -c /etc/shadowsocks.json -d start
 
-##To stop shadowsocks server:
+## To stop shadowsocks server:
 
 sudo ssserver -d stop
 
-##Restart Shadowsocks server:
+## Restart Shadowsocks server:
 
 sudo ssserver -c /etc/shadowsocks.json -d restart
 
-##Check Shadowsocks log
+## Check Shadowsocks log
 
 less /var/log/shadowsocks.log
 
-##Automatically start shadowsocks service
+## Automatically start shadowsocks service
 
 sudo nano /etc/rc.local
 
-##Add the following lines above exit 0 line in rc.local:
+## Add the following lines above exit 0 line in rc.local:
 
 ## Automatically start shadowsocks client
 /usr/bin/python /usr/bin/sslocal -c /etc/shadowsocks.json
@@ -294,22 +294,23 @@ You will receive a reply to your email with a link to download the installer via
 
 1.)  Navigate to the Tor Browser in your Applications folder and open the application.
 
+
 2.)  Depending on your security settings in System Preferences, you may now see a notification telling you that Tor Browser is from an ’unidentified developer’.
 
-	2.1) Open System Preferences by clicking on the Apple icon in the top-level menu and scrolling down to select System Preferences.
+2.1) Open System Preferences by clicking on the Apple icon in the top-level menu and scrolling down to select System Preferences.
 
-	2.2) Click on Security & Privacy in the top row of System Preferences.
+2.2) Click on Security & Privacy in the top row of System Preferences.
 
-	2.3) In the Security & Privacy section of System Preferences, you should see your Gatekeeper settings in the bottom half of the window. 
+2.3) In the Security & Privacy section of System Preferences, you should see your Gatekeeper settings in the bottom half of the window. 
 
-	2.4) You will see "TorBrowser.app" was blocked from opening becasue it is not from an identified developer. 
+2.4) You will see "TorBrowser.app" was blocked from opening becasue it is not from an identified developer. 
 
-	2.5) Select "Open Anyway"
+2.5) Select "Open Anyway"
+
 
 3.) Upon opening Tor browser you will be prompted to either 'connect' or 'configure'
 
-	3.1) To connect directly to the Tor network, click [Connect].
-
+3.1) To connect directly to the Tor network, click [Connect].
 
 
 
@@ -324,6 +325,7 @@ You will receive a reply to your email with a link to download the installer via
 3.) Next, select the default obfs4 bridge.
 
 4.) The next window asks you if you need to use a local proxy to access the Internet. Normally you can connect the Tor network via Tor bridge so just select No.
+
 
 After that, the Tor browser will try to establish a connection to the Tor network.
 
