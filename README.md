@@ -304,10 +304,10 @@ python -m pip install --upgrade pip
 python -m pip install pyasn1 pyasn1-modules pbkdf2 tlslite qrcode ecdsa ltc_scrypt
 ```
 ```
-py setup.py install
+python setup.py install
 ```
 ```
-py electrum-xvg
+python electrum-xvg
 ```
 
 
@@ -320,7 +320,7 @@ https://www.torproject.org/download/download-easy.html.en#windows
 
 ##### Execute the file you downloaded to extract the Tor Browser into a folder on your computer.
 
-##### Create a shotcut to Tor browser on your Desktop
+##### Create a shortcut to Tor browser on your Desktop
 
 ##### Then simply click on “Start Tor Browser.”
 
@@ -332,7 +332,7 @@ https://www.torproject.org/download/download-easy.html.en#windows
 
 ## 3.) Installing On OS X
 
-##### install python if you dont already have it.
+##### install python if you don't already have it.
 https://www.torproject.org/dist/torbrowser/7.5.3/torbrowser-install-7.5.3_en-US.exe
 
 ```
@@ -369,9 +369,9 @@ https://www.torproject.org/dist/torbrowser/7.5.3/TorBrowser-7.5.3-osx64_en-US.dm
 
 ##### Option 2: If you are in a location where access to the Tor Project website is blocked:
 
-###### you can request a copy of the Tor Browser Bundle installer via email. 
+###### You can request a copy of the Tor Browser Bundle installer via email. 
 
-###### To do this, send an email to gettor@torproject.org with the version of Tor you want in the body of the email (e.g., Windows if you have a Windows computer, OSX if you use an Mac Computer, or Linux if you use a Linux-based computer).
+###### To do this, send an email to gettor@torproject.org with the version of Tor you want in the body of the email (e.g., Windows if you have a Windows computer, OSX if you use a Mac Computer, or Linux if you use a Linux-based computer).
 
 ###### You will receive a reply to your email with a link to download the installer via several locations online.
 
@@ -400,7 +400,7 @@ https://www.torproject.org/dist/torbrowser/7.5.3/TorBrowser-7.5.3-osx64_en-US.dm
 
 ##### 2.3) In the Security & Privacy section of System Preferences, you should see your Gatekeeper settings in the bottom half of the window. 
 
-##### 2.4) You will see "TorBrowser.app" was blocked from opening becasue it is not from an identified developer. 
+##### 2.4) You will see "TorBrowser.app" was blocked from opening because it is not from an identified developer. 
 
 ##### 2.5) Select "Open Anyway"
 
