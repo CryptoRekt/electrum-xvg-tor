@@ -280,32 +280,38 @@ sudo nano /etc/rc.local
 ## 2.) Getting Started With Windows
 
 
-##### download this repo as a zip and extract it to where you would like it to run from: 
+##### 1.) Download this repo as a zip and extract it to where you would like it to run from: 
 https://github.com/vergecurrency/electrum-xvg/archive/master.zip
 
-##### download and install python 2.7 for windows here: 
+##### 2.) Download and install python 2.7 for windows here: 
 https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi
 
-##### download and install Microsoft Visual C++ Compiler for Python 2.7 here: 
+##### 3.) Download and install Microsoft Visual C++ Compiler for Python 2.7 here: 
 https://www.microsoft.com/en-us/download/details.aspx?id=44266
 
-##### download and install python qt4: 
+##### 4.) Download and install python qt4: 
 http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.3/PyQt4-4.11.3-gpl-Py2.7-Qt4.8.6-x64.exe
 
-##### then in MS Visual Studio command prompt (32 or 64 bit), cd into the directory electrum-xvg-tor-master then:
+##### 5.) Launch MS Visual Studio command prompt (32 or 64 bit) 
+
+##### 6.)cd into the directory electrum-xvg-tor-master and execute the following:
 
 ```
 pyrcc4 icons.qrc -o gui/qt/icons_rc.py
 ```
+
 ```
 python -m pip install --upgrade pip
 ```
+
 ```
 python -m pip install pyasn1 pyasn1-modules pbkdf2 tlslite qrcode ecdsa ltc_scrypt
 ```
+
 ```
 python setup.py install
 ```
+
 ```
 python electrum-xvg
 ```
@@ -314,15 +320,15 @@ python electrum-xvg
 ## 2.b) Installing TOR Browser
 
 
-##### download Tor browser here:
+##### 1.) Download Tor browser here:
 
 https://www.torproject.org/download/download-easy.html.en#windows
 
-##### Execute the file you downloaded to extract the Tor Browser into a folder on your computer.
+##### 2.) Execute the file you downloaded to extract the Tor Browser into a folder on your computer.
 
-##### Create a shortcut to Tor browser on your Desktop
+##### 3.) Create a shortcut to Tor browser on your Desktop
 
-##### Then simply click on “Start Tor Browser.”
+##### 4.) Then simply click on “Start Tor Browser.”
 
 ---------------------------------------------
 ###### _Tor Browser is required to be open and running in the background in order for the electrum tor wallet to connect._
@@ -338,21 +344,27 @@ https://www.torproject.org/dist/torbrowser/7.5.3/torbrowser-install-7.5.3_en-US.
 ```
 pip intall slowaes
 ```
+
 ```
 python setup.py build
 ```
+
 ```
 Modify electrum-xvg and change python2 to python in the first line
 ```
+
 ```
 sudo python setup.py install
 ```
+
 ```
 then install tor and modify the torrc file, by removing the # from in front of SocksProxy, and change the 9150 to 9050.
 ```
+
 ```
 restart tor, then launch wallet by 
 ```
+
 ```
 py electrum-xvg
 ```
