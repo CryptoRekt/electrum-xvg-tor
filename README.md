@@ -1,4 +1,4 @@
-## Electrum-XVG for TOR - 
+## Electrum over Tor: XVG
 
 ##### _lightweight VERGE client for connecting to the XVG Tor Electrum Server_
 
@@ -11,7 +11,7 @@ Licence: GNU GPL v3
 _Authors: Sunerok, Bitspill, Whit3water & CryptoRekt_
 
 ## Language: 
-_Python_
+Python
 
 ## Homepage: 
 https://Vergecurrency.com/
@@ -39,11 +39,26 @@ sudo apt-get install tor
 sudo service tor start && sudo service tor stop
 ```
 
-#### now go to /etc/tor/ and edit the torrc file. (you can use sudo nano torrc)
+####  1.) Go to /etc/tor/ and edit the torrc file. _(you can use sudo nano torrc)_
+```
+cd /etc/tor
+```
 
-#### you just need to remove the # before the line that starts with SocksPort 9050
+```
+sudo nano torrc
+```
+#### 2.) Remove the # before the line that starts with SocksPort 9050
 
-#### then save torrc, and go back to command prompt and type sudo service tor restart.
+#### 3.) Save torrc:
+```
+CTRL+X > Y > ENTER
+```
+
+#### 4.) Restart Tor:
+```
+sudo service tor restart
+```
+
 
 ## Now we install the electrum wallet:
 
