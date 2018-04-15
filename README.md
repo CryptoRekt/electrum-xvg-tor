@@ -294,7 +294,7 @@ http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.3/PyQt4-4.11.3-gpl-Py
 
 ##### 5.) Launch MS Visual Studio command prompt (32 or 64 bit) 
 
-##### 6.)cd into the directory electrum-xvg-tor-master and execute the following:
+##### 6.) cd into the directory electrum-xvg-tor-master and execute the following:
 
 ```
 pyrcc4 icons.qrc -o gui/qt/icons_rc.py
