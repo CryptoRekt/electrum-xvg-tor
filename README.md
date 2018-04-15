@@ -117,24 +117,24 @@ If the connection failed, then go back to the previous step and configure a prox
 
 1.d)SETUP INSTRUCTIONS FOR SHADOWSOCKS
 ---------------------------------------------
-#Debian/Ubuntu
+##Debian/Ubuntu
 
 sudo apt-get update
 sudo apt-get install python-pip 
 sudo apt-get install python-setuptools m2crypto
 sudo pip install shadowsocks
 
-#CentOS/RHEL
+##CentOS/RHEL
 
 sudo yum install m2crypto python-setuptools
 sudo easy_install pip
 sudo pip install shadowsocks
 
-#Create a configuration file:
+##Create a configuration file:
 
 sudo nano /etc/shadowsocks.json
 
-#Put the following text into the file.
+##Put the following text into the file.
 
 	{
 	"server":"your_server_ip",
@@ -145,7 +145,7 @@ sudo nano /etc/shadowsocks.json
 	"method":"aes-256-cfb"
 	}
 
-#Explanation of each field:
+##Explanation of each field:
 
     server:  your hostname or server IP (IPv4/IPv6).
     server_port:  server port number.
@@ -154,31 +154,31 @@ sudo nano /etc/shadowsocks.json
     timeout:  connections timeout in seconds.
     method:  encryption method, “bf-cfb”, “aes-256-cfb”, “des-cfb”, “rc4”, etc. Default is table, which is not secure. “aes-256-cfb” is recommended.
 
-#To save:
+##To save:
 
 CTRL+X > Y > ENTER
 
-#Start shadowsocks server.
+##Start shadowsocks server.
 
 sudo ssserver -c /etc/shadowsocks.json -d start
 
-#To stop shadowsocks server:
+##To stop shadowsocks server:
 
 sudo ssserver -d stop
 
-#Restart Shadowsocks server:
+##Restart Shadowsocks server:
 
 sudo ssserver -c /etc/shadowsocks.json -d restart
 
-#Check Shadowsocks log
+##Check Shadowsocks log
 
 less /var/log/shadowsocks.log
 
-#Automatically start shadowsocks service
+##Automatically start shadowsocks service
 
 sudo nano /etc/rc.local
 
-#Add the following lines above exit 0 line in rc.local:
+##Add the following lines above exit 0 line in rc.local:
 
 ## Automatically start shadowsocks client
 /usr/bin/python /usr/bin/sslocal -c /etc/shadowsocks.json
