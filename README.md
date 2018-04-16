@@ -282,7 +282,7 @@ sudo nano /etc/rc.local
 
 
 ##### 1.) Download this repo as a zip and extract it to where you would like it to run from: 
-https://github.com/vergecurrency/electrum-xvg/archive/master.zip
+https://github.com/vergecurrency/electrum-xvg-tor/archive/master.zip
 
 ##### 2.) Download and install python 2.7 for windows here: 
 https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi
