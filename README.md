@@ -351,15 +351,7 @@ https://www.torproject.org/download/download-easy.html.en#windows
 #### Install The Following Dependencies:
 
 1.)
-###### Python
-https://www.python.org/ftp/python/2.7.14/python-2.7.14-macosx10.6.pkg
-
-###### Modify your system $PATH variable to point to the latest version of python:
-```
-export PATH="/path/to/your/python2.7.14/bin:${PATH}"
-```
-
-#### 2.) _(open a terminal window)_
+####  _(open a terminal window)_
 ###### xcode
 ```
 xcode-select --install
@@ -368,6 +360,16 @@ xcode-select --install
 ###### Homebrew:
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+###### Python:
+```
+brew install python@2
+```
+
+###### Modify your system $PATH variable to point to the latest version of python:
+```
+export PATH="/usr/local/opt/python@2/sbin:${PATH}"
 ```
 
 ###### pip
