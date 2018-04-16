@@ -536,6 +536,7 @@ After that, the Tor browser will try to establish a connection to the Tor networ
 
 ## 4.) How Official Packages Are Created.
 
+### On Windows:
 ```
 python mki18n.py
 
@@ -545,11 +546,11 @@ python setup.py sdist --format=zip,gztar
 ```
 ### On Mac OS X:
 
-#### On port based installs
+#### On port based installs:
 ```
 sudo python setup-release.py py2app
 ```
-#### On brew installs
+#### On brew installs:
 ```
 ARCHFLAGS="-arch i386 -arch x86_64" sudo python setup-release.py py2app --includes sip
 
